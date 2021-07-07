@@ -31,7 +31,7 @@ const Photoalbum = () => {
     } else if (searchInput <= 0) {
       alert("zero and negative numbers is not allowed!");
     } else {
-      console.log(searchInput);
+     
       dispatch(GetPhotoAlbum(searchInput));
     }
   };
@@ -39,10 +39,10 @@ const Photoalbum = () => {
   useEffect(() => {
     if (result) {
       setInput("");
-      console.log(result);
+  
     }
     if (error) {
-      console.log(error);
+   
       setInput("");
     }
   }, [error, result, photos]);
