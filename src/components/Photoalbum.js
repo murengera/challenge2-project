@@ -30,8 +30,9 @@ const Photoalbum = () => {
       alert("This field is required!");
     } else if (searchInput <= 0) {
       alert("zero and negative numbers is not allowed!");
+    } else if (searchInput >= 101) {
+      alert(" Photos of  album id " + searchInput + "does not exist");
     } else {
-     
       dispatch(GetPhotoAlbum(searchInput));
     }
   };
@@ -39,10 +40,8 @@ const Photoalbum = () => {
   useEffect(() => {
     if (result) {
       setInput("");
-  
     }
     if (error) {
-   
       setInput("");
     }
   }, [error, result, photos]);
