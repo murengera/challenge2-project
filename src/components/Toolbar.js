@@ -6,7 +6,7 @@ function Toolbar() {
       <div className="toolbar">
         <p className="par1">
           {" "}
-          Dynamic and interactive web page challenge 2 Using React js
+          Dynamic and interactive web page challenge 3 Using React js
         </p>
         <br />
         <p>

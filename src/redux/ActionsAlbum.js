@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const GetPhotoAlbum = (id) => async (dispatch) => {
   try {
-    const endPoint = `https://jsonplaceholder.typicode.com/album/${id}/photos`;
+    const endPoint = `https://challenge3api.herokuapp.com/api/album/${id}`;
     const result = await axios.get(endPoint);
     console.log(result);
     dispatch({
